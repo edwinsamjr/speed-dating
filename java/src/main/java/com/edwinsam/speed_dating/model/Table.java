@@ -11,14 +11,9 @@ public class Table {
         this.rounds = new ArrayList<>();
     }
 
-    public Table(int tableNum, int numRounds) {
+    public Table(int tableNum) {
         this.tableNum = tableNum;
         this.rounds = new ArrayList<>();
-        for (int i = 1; i <= numRounds; i++) {
-            Round round = new Round();
-            round.setRoundNum(i);
-            rounds.add(round);
-        }
     }
 
     public int getTableNum() {
