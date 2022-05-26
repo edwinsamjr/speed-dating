@@ -7,7 +7,14 @@ public class User {
     private List<Date> userDates;
     private boolean isReturningPlayer;
 
+    public User() {
 
+    }
+
+    public User(String name, boolean isReturningPlayer) {
+        this.name = name;
+        this.isReturningPlayer = isReturningPlayer;
+    }
 
     public String getName() {
         return name;

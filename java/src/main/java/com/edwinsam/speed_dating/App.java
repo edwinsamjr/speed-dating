@@ -57,7 +57,20 @@ public class App {
 
 
             } else if (choice == MAIN_MENU_PRINT_USER_SCHEDULES) {
-                scheduleService.printUsers(users);
+                User personA = new User("Person A", true);
+                User personB = new User("Person B", true);
+                User personC = new User("Person C", false);
+                User personD = new User("Person D", false);
+
+                List<User> fakeUsers = new ArrayList<>();
+                fakeUsers.add(personA);
+                fakeUsers.add(personB);
+                fakeUsers.add(personC);
+                fakeUsers.add(personD);
+
+
+
+                scheduleService.printTableSchedule(fakeUsers);
                 System.out.println("Thank you for playing");
                 break;
             }
